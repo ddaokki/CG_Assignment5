@@ -1,26 +1,58 @@
-# 빌드 결과물
+# ───── Prerequisites ─────
+*.d
+
+# ───── Compiled Object Files ─────
+*.slo
+*.lo
+*.o
 *.obj
+
+# ───── Precompiled Headers ─────
+*.gch
+*.pch
+
+# ───── Compiled Dynamic Libraries ─────
+*.so
+*.dylib
+*.dll
+
+# ───── Compiled Static Libraries ─────
+*.lai
+*.la
+*.a
+*.lib
+
+# ───── Executables ─────
 *.exe
+*.out
+*.app
+
+# ───── Visual Studio Build Files ─────
 *.pdb
 *.ilk
 *.log
 *.sdf
 *.ipch
+*.vcxproj.user
 
-# IDE 설정
+# ───── Build Directories ─────
+Debug/
+Release/
+x64/
+build/
+
+# ───── IDE Configurations ─────
 .vs/
 .vscode/
 
-# 빌드 디렉토리
-Debug/
-Release/
-build/
-x64/
-
-# 외부 라이브러리 및 실행파일 포함
+# ───── Keep external libraries and headers ─────
 !lib/
+!lib/**/*.lib
 !lib/**/*.dll
 !include/
 !include/**
+
+# ───── Keep runtime DLLs ─────
 !bin/
+!bin/**/*.dll
 !bin/**/*.exe
