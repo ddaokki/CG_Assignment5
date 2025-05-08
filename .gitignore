@@ -1,0 +1,26 @@
+# 빌드 결과물
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.log
+*.sdf
+*.ipch
+
+# IDE 설정
+.vs/
+.vscode/
+
+# 빌드 디렉토리
+Debug/
+Release/
+build/
+x64/
+
+# 외부 라이브러리 및 실행파일 포함
+!lib/
+!lib/**/*.dll
+!include/
+!include/**
+!bin/
+!bin/**/*.exe
